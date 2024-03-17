@@ -1,3 +1,5 @@
+## SugaryScoops App
+
 This Swift code is part of an iOS application built using SwiftUI, designed to display a list of desserts fetched from a remote API and provide detailed information for each dessert. The code is structured around the Model-View-ViewModel (MVVM) architectural pattern, which helps in organizing the codebase for better maintainability and scalability.
 
 ## Model:

@@ -1,10 +1,3 @@
-//
-//  Recipes_AppTests.swift
-//  Recipes-AppTests
-//
-//  Created by Patron on 2/3/24.
-//
-
 import XCTest
 @testable import Recipes_App
 

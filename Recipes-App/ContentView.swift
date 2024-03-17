@@ -1,10 +1,3 @@
-//
-//  ContentView.swift
-//  Recipes-App
-//
-//  Created by Patron on 2/3/24.
-//
-
 import SwiftUI
 
 struct ContentView: View {

@@ -1,12 +1,6 @@
-//
-//  Structs.swift
-//  Recipes-App
-//
-//  Created by Patron on 2/4/24.
-//
-
 import Foundation
 
+// Struct for meals
 class Meal: Encodable, Decodable, Identifiable, ObservableObject {
     
     enum CodingKeys: CodingKey {

@@ -1,14 +1,7 @@
-//
-//  DetailView.swift
-//  Recipes-App
-//
-//  Created by Patron on 2/4/24.
-//
-
 import SwiftUI
 
 struct DetailView: View {
-    @EnvironmentObject private var viewModel: DessertManager // Use EnvironmentObject to inject the ViewModel
+    @EnvironmentObject private var viewModel: DessertManager 
 
     let mealID: String
 
@@ -42,7 +35,7 @@ struct DetailView: View {
                         .font(.body)
                         .padding(.top, 5)
                     
-                    
+                    // All instructions and meals together
                     Group {
                         VStack {
                             HStack {
@@ -158,28 +151,9 @@ struct DetailView: View {
                             }
                         }
                     }
-                    
-//                    if let youtubeURL = viewModel.instructions[0].strYoutube,
-//                        let url = URL(string: youtubeURL) {
-//                        Link("Watch YouTube video", destination: url)
-//                    }
-//                    else {
-//                        Text("Unknown video")
-//                    }
-//
-//                    if let youtubeURL = viewModel.instructions[0].strSource,
-//                        let url = URL(string: youtubeURL) {
-//                        Link("Recipe source", destination: url)
-//                    }
-//                    else {
-//                        Text("Unknown source")
-//                    }
 
-                }
-                
-                
-            }
-                            
+                }    
+            }                   
     }
         
             .onAppear {
@@ -194,7 +168,6 @@ struct DetailView: View {
             try await viewModel.fetchData(from: "https://themealdb.com/api/json/v1/1/lookup.php?i=", urlDetail: mealID)
         } catch {
             print("An error occurred: \(error)")
-            // Handle the error appropriately
         }
     }
 }
